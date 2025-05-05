@@ -25,6 +25,8 @@ Para ejecutar este proyecto, necesitas instalar las dependencias de Python neces
 A su vez hay que tener una instancia de Kafka corriendo en tu máquina. Puedes usar Docker para levantar Kafka si no lo tienes instalado localmente: 
 - docker-compose up -d
 
+![Despliegue_docker](Imagenes/Despliegue_docker.jpg)
+
 ## Ejecución del Productor
 
 El Productor simula la generación de métricas y las envía a Kafka. Para ejecutar el productor, solo necesitas ejecutar el siguiente script:
@@ -43,25 +45,25 @@ Para ejecutar el consumidor, ejecuta el siguiente script:
 
 ## Capturas de Pantalla
 
-Productor Enviando Datos
+# Productor Enviando Datos
 
 En esta imagen se muestra el productor generando y enviando métricas a Kafka.
 
 ![Productor Enviando Datos](Imagenes/productor_enviando_datos.jpg)
 
-Consumidor Recibiendo Datos
+# Consumidor Recibiendo Datos
 
 Esta imagen muestra el proceso de consumo de datos desde Kafka y su almacenamiento en MongoDB.
 
 ![Consumidor Recibiendo Datos](Imagenes/consumidor_recibiendo_datos.jpg)
 
-Colección de Métricas Brutas en MongoDB
+# Colección de Métricas Brutas en MongoDB
 
 Aquí se muestra cómo se almacenan las métricas brutas de los servidores en la colección system_metrics_raw_iabd07.
 
 ![Colección Raw](Imagenes/colección_system_metrics_raw_iabd07.jpg)
 
-Colección de KPIs en MongoDB
+# Colección de KPIs en MongoDB
 
 Aquí se muestra cómo se almacenan los KPIs calculados en la colección system_metrics_kpis_iabd07 en MongoDB Atlas.
 
